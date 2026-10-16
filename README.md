@@ -13,10 +13,10 @@ I build async backend services in Rust and Python and test web applications and 
 
 | Project | Description | Stack |
 |---|---|---|
+| **[Aether](https://github.com/DroBov1Tya/Aether)** | Self-hosted internet reconnaissance platform: distributed scan agents (masscan, nmap, httpx, nuclei, tlsx, dnsx), passive subdomain discovery, Shodan-style search and scan history over your own data. | ![Rust](https://img.shields.io/badge/Rust-B7410E?style=flat-square&logo=rust&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) |
 | **[kali-mcp](https://github.com/DroBov1Tya/kali-mcp)** | Kali Linux container exposed to AI agents via MCP, behind a gateway with a network kill-switch: no `NET_ADMIN`, no `NET_RAW`, `no-new-privileges`. | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) |
 | **[PentaCore](https://github.com/DroBov1Tya/PentaCore)** | Persistent working memory for AI agents over MCP: goals, attempts, findings and entities that survive context resets. SQLite FTS5 + LanceDB, one local binary. | ![Rust](https://img.shields.io/badge/Rust-B7410E?style=flat-square&logo=rust&logoColor=white) ![Stars](https://img.shields.io/github/stars/DroBov1Tya/PentaCore?style=flat-square&label=stars&color=1a7f37) |
 | **[DBMorph](https://github.com/DroBov1Tya/DBMorph)** | Streaming ETL for huge CSV / TXT / SQL dumps: encoding and delimiter auto-detection, files larger than RAM, interactive table export. | ![Rust](https://img.shields.io/badge/Rust-B7410E?style=flat-square&logo=rust&logoColor=white) |
-| **[Wifi-Scanner](https://github.com/DroBov1Tya/Wifi-Scanner)** | Wi-Fi network scanner for single-board computers: BSSID, SSID, signal, security, first/last seen, stored in SQLite. | ![Rust](https://img.shields.io/badge/Rust-B7410E?style=flat-square&logo=rust&logoColor=white) |
 
 ## Tech stack
 

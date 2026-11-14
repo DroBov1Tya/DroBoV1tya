@@ -9,11 +9,23 @@ I build async backend services in Rust and Python and test web applications and 
 - **Backend:** async services, database design, containerized deployment.
 - **Tooling:** MCP servers and automation for AI-assisted security testing.
 
+## Featured: Dusk Code
+
+<a href="https://drobov1tya.github.io/dusk_code/"><img align="right" width="96" src="https://raw.githubusercontent.com/DroBov1Tya/dusk_code/main/projects/clients/desktop/assets/icon.png" alt="Dusk Code"></a>
+
+An open-source coding agent in Rust that stays on your machine: one core and three clients (desktop window, terminal, browser), any model, subagents, skills and crash-safe threads. Plugins run in a sandbox, never see your keys and install from a signed store.
+
+| Repository | What it is |
+|---|---|
+| **[dusk_code](https://github.com/DroBov1Tya/dusk_code)** | The core and its clients · [site](https://drobov1tya.github.io/dusk_code/) · [releases](https://github.com/DroBov1Tya/dusk_code/releases) |
+| **[duskcode-plugins](https://github.com/DroBov1Tya/duskcode-plugins)** | The plugin store: signed packages and the [Workshop](https://drobov1tya.github.io/duskcode-plugins/) |
+
+![Rust](https://img.shields.io/badge/Rust-B7410E?style=flat-square&logo=rust&logoColor=white) ![Stars](https://img.shields.io/github/stars/DroBov1Tya/dusk_code?style=flat-square&label=stars&color=1a7f37) ![Release](https://img.shields.io/github/v/release/DroBov1Tya/dusk_code?style=flat-square&color=b4a0f8) ![License](https://img.shields.io/badge/license-MIT-6e7681?style=flat-square)
+
 ## Projects
 
 | Project | Description | Stack |
 |---|---|---|
-| **[Dusk Code](https://github.com/DroBov1Tya/dusk_code)** | Rust AI agent system with one core and thin clients, subagents, skills, compaction, and crash-safe threads. | ![Rust](https://img.shields.io/badge/Rust-B7410E?style=flat-square&logo=rust&logoColor=white) |
 | **[Aether](https://github.com/DroBov1Tya/Aether)** | Self-hosted internet reconnaissance platform: distributed scan agents (masscan, nmap, httpx, nuclei, tlsx, dnsx), passive subdomain discovery, Shodan-style search and scan history over your own data. | ![Rust](https://img.shields.io/badge/Rust-B7410E?style=flat-square&logo=rust&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) |
 | **[kali-mcp](https://github.com/DroBov1Tya/kali-mcp)** | Kali Linux container exposed to AI agents via MCP, behind a gateway with a network kill-switch: no `NET_ADMIN`, no `NET_RAW`, `no-new-privileges`. | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) |
 | **[PentaCore](https://github.com/DroBov1Tya/PentaCore)** | Persistent working memory for AI agents over MCP: goals, checklists, findings and entities that survive context resets. One local binary, encrypted SQLite. | ![Rust](https://img.shields.io/badge/Rust-B7410E?style=flat-square&logo=rust&logoColor=white) ![Stars](https://img.shields.io/github/stars/DroBov1Tya/PentaCore?style=flat-square&label=stars&color=1a7f37) |

@@ -1,0 +1,96 @@
+name: Stats cards
+
+# Renders the two cards in assets/stats/ once a day, so the README never
+# depends on a public image host that may be rate-limited.
+
+on:
+  schedule:
+    - cron: "23 4 * * *"
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: stats-cards
+  cancel-in-progress: false
+
+env:
+  # The dusk palette of the README artwork (hex without "#").
+  CARD_THEME: bg_color=1b1c2a&title_color=efedf7&text_color=aeadc4&icon_color=b4a0f8&border_color=2b2c3d&border_radius=14&card_width=410
+
+jobs:
+  render:
+    # Third-party code runs only here: a read-only token, no checkout, no way to push.
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - name: Render the activity card
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&hide=issues,contribs&line_height=30&custom_title=GitHub%20activity&${{ env.CARD_THEME }}
+          path: cards/overview.svg
+          # Pinned: the default ("v2") installs whatever 2.x is newest at run time.
+          core_version: "2.2.0"
+          fail_on_error: "true"
+          token: ${{ github.token }}
+
+      - name: Render the languages card
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&custom_title=Languages&${{ env.CARD_THEME }}
+          path: cards/languages.svg
+          core_version: "2.2.0"
+          fail_on_error: "true"
+          token: ${{ github.token }}
+
+      - name: Hand the cards to the publish job
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: stats-cards
+          path: cards/*.svg
+          if-no-files-found: error
+          retention-days: 1
+
+  publish:
+    # The only job that may write, and it runs no third-party code.
+    needs: render
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: stats-cards
+          path: ${{ runner.temp }}/cards
+
+      - name: Check the cards and commit them
+        env:
+          INCOMING: ${{ runner.temp }}/cards
+        run: |
+          set -euo pipefail
+          for card in overview languages; do
+            file="$INCOMING/$card.svg"
+            # The rendered file is untrusted input: refuse anything that is not a plain card.
+            if [ ! -s "$file" ] || ! grep -q '<svg' "$file" \
+              || grep -qiE '<script|<foreignObject|Something went wrong' "$file"; then
+              echo "::error::$card.svg is missing or is not a valid card"
+              exit 1
+            fi
+            install -m 0644 "$file" "assets/stats/$card.svg"
+          done
+          git add assets/stats/overview.svg assets/stats/languages.svg
+          if git diff --cached --quiet; then
+            echo "Cards unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "stats: refresh cards"
+          git push

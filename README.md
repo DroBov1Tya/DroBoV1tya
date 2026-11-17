@@ -1,57 +1,61 @@
-### Application Security Engineer · Rust and Python backend developer
+<p align="center">
+  <a href="https://drobov1tya.github.io/persona/"><img src="assets/header.svg" width="100%" alt="Neil Ermak, Riga, Latvia. Application Security Engineer and Rust developer: finding what breaks, building what holds."></a>
+</p>
 
-## About
+<p align="center">
+  <a href="https://drobov1tya.github.io/persona/"><img src="assets/link-site.svg" height="38" alt="Website"></a>
+  <a href="https://www.linkedin.com/in/neil-ermak/"><img src="assets/link-linkedin.svg" height="38" alt="LinkedIn"></a>
+  <a href="https://t.me/Ufb3heud"><img src="assets/link-telegram.svg" height="38" alt="Telegram"></a>
+  <a href="https://t.me/drob_em_all"><img src="assets/link-channel.svg" height="38" alt="Telegram channel"></a>
+</p>
 
-I build async backend services in Rust and Python and test web applications and infrastructure for security flaws.
+I test web applications, APIs and infrastructure for security flaws, and I build backend services
+and security tools, mostly in Rust. The two feed each other: knowing how things break shapes how I
+build them. Most of my recent work is tooling for AI agents: a coding agent, and MCP servers that
+give agents a memory and a contained Kali box.
 
-- **Offensive security:** web apps and APIs, Active Directory, Linux.
-- **Vulnerability focus:** business-logic flaws, authentication bypass, injections.
-- **Backend:** async services, database design, containerized deployment.
-- **Tooling:** MCP servers and automation for AI-assisted security testing.
+<p align="center">
+  <img src="assets/whoami.svg" width="640" alt="Terminal. whoami: Neil Ermak, application security engineer, Rust developer. Offensive security: web apps and APIs, Active Directory, Linux. Vulnerability focus: business-logic flaws, authentication bypass, injections. Backend: async services, database design, containerized deployment. Tooling: MCP servers and automation for AI-assisted security testing.">
+</p>
 
-## Featured: Dusk Code
+## Stack
 
-<a href="https://drobov1tya.github.io/dusk_code/"><img align="right" width="96" src="https://raw.githubusercontent.com/DroBov1Tya/dusk_code/main/projects/clients/desktop/assets/icon.png" alt="Dusk Code"></a>
-
-An open-source coding agent in Rust that stays on your machine: one core and three clients (desktop window, terminal, browser), any model, subagents, skills and crash-safe threads. Plugins run in a sandbox, never see your keys and install from a signed store.
-
-| Repository | What it is |
-|---|---|
-| **[dusk_code](https://github.com/DroBov1Tya/dusk_code)** | The core and its clients · [site](https://drobov1tya.github.io/dusk_code/) · [releases](https://github.com/DroBov1Tya/dusk_code/releases) |
-| **[duskcode-plugins](https://github.com/DroBov1Tya/duskcode-plugins)** | The plugin store: signed packages and the [Workshop](https://drobov1tya.github.io/duskcode-plugins/) |
-
-![Rust](https://img.shields.io/badge/Rust-B7410E?style=flat-square&logo=rust&logoColor=white) ![Stars](https://img.shields.io/github/stars/DroBov1Tya/dusk_code?style=flat-square&label=stars&color=1a7f37) ![Release](https://img.shields.io/github/v/release/DroBov1Tya/dusk_code?style=flat-square&color=b4a0f8) ![License](https://img.shields.io/badge/license-MIT-6e7681?style=flat-square)
+```rust
+let neil = Engineer {
+    languages: ["Rust", "Python", "Bash"],
+    security: ["Burp Suite", "Metasploit", "Wireshark", "Kali Linux"],
+    data: ["PostgreSQL", "MongoDB", "ClickHouse", "SQLite", "Redis"],
+    backend: ["FastAPI", "Nginx"],
+    infra: ["Docker", "Linux", "Proxmox", "GitHub Actions"],
+};
+```
 
 ## Projects
 
-| Project | Description | Stack |
-|---|---|---|
-| **[Aether](https://github.com/DroBov1Tya/Aether)** | Self-hosted internet reconnaissance platform: distributed scan agents (masscan, nmap, httpx, nuclei, tlsx, dnsx), passive subdomain discovery, Shodan-style search and scan history over your own data. | ![Rust](https://img.shields.io/badge/Rust-B7410E?style=flat-square&logo=rust&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) |
-| **[kali-mcp](https://github.com/DroBov1Tya/kali-mcp)** | Kali Linux container exposed to AI agents via MCP, behind a gateway with a network kill-switch: no `NET_ADMIN`, no `NET_RAW`, `no-new-privileges`. | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) |
-| **[PentaCore](https://github.com/DroBov1Tya/PentaCore)** | Persistent working memory for AI agents over MCP: goals, checklists, findings and entities that survive context resets. One local binary, encrypted SQLite. | ![Rust](https://img.shields.io/badge/Rust-B7410E?style=flat-square&logo=rust&logoColor=white) ![Stars](https://img.shields.io/github/stars/DroBov1Tya/PentaCore?style=flat-square&label=stars&color=1a7f37) |
-| **[xbot](https://github.com/DroBov1Tya/xbot)** | Telegram bot for selling VPN subscriptions on top of a Remnawave panel: Telegram Stars and CryptoBot payments, many bots served by one process, referrals, vouchers, automatic provisioning through the panel API. | ![Rust](https://img.shields.io/badge/Rust-B7410E?style=flat-square&logo=rust&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) |
-| **[DBMorph](https://github.com/DroBov1Tya/DBMorph)** | Streaming ETL for huge CSV / TXT / SQL dumps: encoding and delimiter auto-detection, files larger than RAM, interactive table export. | ![Rust](https://img.shields.io/badge/Rust-B7410E?style=flat-square&logo=rust&logoColor=white) |
+<p align="center">
+  <a href="https://github.com/DroBov1Tya/dusk_code"><img src="assets/card-dusk-code.svg" width="410" alt="Dusk Code: open-source coding agent in Rust. One core with desktop, terminal and browser clients over one protocol; local SQLite history, any model provider, sandboxed plugins from a signed store. MIT."></a>
+  <a href="https://github.com/DroBov1Tya/Aether"><img src="assets/card-aether.svg" width="410" alt="Aether: self-hosted internet reconnaissance. Distributed agents run masscan, nmap, httpx, nuclei, tlsx and dnsx; results get a Shodan-style search with scan history. Rust, Docker."></a>
+  <a href="https://github.com/DroBov1Tya/kali-mcp"><img src="assets/card-kali-mcp.svg" width="410" alt="kali-mcp: a Kali Linux container for AI agents over MCP, behind a gateway. No NET_ADMIN or NET_RAW; traffic leaves only through the configured SOCKS5 proxy. Python, Docker."></a>
+  <a href="https://github.com/DroBov1Tya/PentaCore"><img src="assets/card-pentacore.svg" width="410" alt="PentaCore: working memory for AI agents over MCP: goals, steps, attempts, findings and entities. One local binary, one SQLCipher file. Rust, SQLite."></a>
+  <a href="https://github.com/DroBov1Tya/Rusty-Hook"><img src="assets/card-rusty-hook.svg" width="410" alt="Rusty-Hook: self-hosted webhook inspector, an alternative to webhook.site. Requests show up live over SSE; sign-in by admin key or OIDC. Rust, Leptos, PostgreSQL."></a>
+  <a href="https://github.com/DroBov1Tya/xbot"><img src="assets/card-xbot.svg" width="410" alt="xbot: Telegram bot that sells VPN subscriptions on a Remnawave panel. Telegram Stars and CryptoBot payments; one process serves many bots. Rust, PostgreSQL."></a>
+  <a href="https://github.com/DroBov1Tya/DBMorph"><img src="assets/card-dbmorph.svg" width="410" alt="DBMorph: streaming converter for large, messy CSV, JSON, XLSX, SQL dumps, SQLite and Parquet. Detects encodings and keeps memory flat for files larger than RAM. Rust."></a>
+  <a href="https://github.com/DroBov1Tya?tab=repositories"><img src="assets/card-more.svg" width="410" alt="And the rest: hermes_auto, a Bash installer for a Hermes Agent security-assessment profile; Wifi-Scanner, a Wi-Fi scanner for single-board computers; and other repositories."></a>
+</p>
 
-## Tech stack
+## Activity
 
-| Area | Tools |
-|---|---|
-| Languages | ![Rust](https://img.shields.io/badge/Rust-B7410E?style=flat-square&logo=rust&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white) |
-| Security | ![Burp Suite](https://img.shields.io/badge/Burp%20Suite-FF6633?style=flat-square&logo=burpsuite&logoColor=white) ![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=flat-square&logo=metasploit&logoColor=white) ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white) ![Kali Linux](https://img.shields.io/badge/Kali%20Linux-557C94?style=flat-square&logo=kalilinux&logoColor=white) |
-| Data | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) ![ClickHouse](https://img.shields.io/badge/ClickHouse-FFCC01?style=flat-square&logo=clickhouse&logoColor=black) ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white) |
-| Backend and infrastructure | ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=flat-square&logo=proxmox&logoColor=white) ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) |
-
-## GitHub stats
-
-<div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=DroBov1Tya&show_icons=true&hide=stars,issues&cache_seconds=21600&theme=transparent&hide_border=true&title_color=2da44e&icon_color=2da44e&text_color=6e7681&ring_color=2da44e" alt="GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=DroBov1Tya&layout=compact&langs_count=6&cache_seconds=21600&theme=transparent&hide_border=true&title_color=2da44e&text_color=6e7681" alt="Top languages" />
-  <br/>
-  <img src="https://streak-stats.demolab.com/?user=DroBov1Tya&hide_border=true&background=00000000&ring=2da44e&fire=2da44e&currStreakLabel=2da44e&currStreakNum=6e7681&sideNums=6e7681&sideLabels=6e7681&dates=6e7681&stroke=6e7681" alt="Contribution streak" />
-</div>
+<p align="center">
+  <img src="assets/stats/overview.svg" width="410" alt="GitHub activity: stars earned, commits in the last year, pull requests">
+  <img src="assets/stats/languages.svg" width="410" alt="Languages across public repositories">
+</p>
 
 ## Contact
 
-- **Bug in one of my tools:** open an issue in the repository.
+- **Work and collaboration:** [Telegram](https://t.me/Ufb3heud), [LinkedIn](https://www.linkedin.com/in/neil-ermak/) or [the site](https://drobov1tya.github.io/persona/).
+- **Bug in one of my tools:** open an issue in its repository.
 - **Security issue:** report it privately via *Security → Report a vulnerability* in the affected repository, not in a public issue.
-- **Collaboration:** start a discussion or mention me in an issue.
+
+<p align="center">
+  <a href="https://drobov1tya.github.io/persona/"><img src="assets/footer.svg" width="100%" alt="Personal site: drobov1tya.github.io/persona"></a>
+</p>

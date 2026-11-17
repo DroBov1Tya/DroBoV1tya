@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 84" width="900" height="84" role="img" aria-label="Personal site: drobov1tya.github.io/persona">
+<title>Personal site: drobov1tya.github.io/persona</title>
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b0b16"/><stop offset=".6" stop-color="#14132a"/><stop offset="1" stop-color="#1a1630"/></linearGradient><radialGradient id="glow" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="1" gradientTransform="translate(450.0 90.72) scale(1080.0 58.8)"><stop offset="0" stop-color="rgb(130,90,230)" stop-opacity=".2"/><stop offset=".7" stop-color="rgb(130,90,230)" stop-opacity="0"/></radialGradient><clipPath id="frame"><rect width="900" height="84" rx="14"/></clipPath></defs>
+<style>.tw{animation:tw 5s ease-in-out infinite}@keyframes tw{50%{opacity:.12}}@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style>
+<g clip-path="url(#frame)">
+<rect width="900" height="84" fill="url(#sky)"/>
+<rect width="900" height="84" fill="url(#glow)"/>
+<circle cx="825.6" cy="72.2" r="0.6" fill="#dcd6ff" opacity="0.36" class="tw" style="animation-duration:4.6s;animation-delay:-2.5s"/>
+<circle cx="649.7" cy="14.7" r="0.6" fill="#dcd6ff" opacity="0.47"/>
+<circle cx="29.9" cy="7.4" r="1.3" fill="#dcd6ff" opacity="0.62" class="tw" style="animation-duration:5.6s;animation-delay:-3.0s"/>
+<circle cx="689.4" cy="11.7" r="0.6" fill="#dcd6ff" opacity="0.67"/>
+<circle cx="557.0" cy="74.7" r="0.8" fill="#dcd6ff" opacity="0.66"/>
+<circle cx="864.2" cy="15.5" r="0.8" fill="#dcd6ff" opacity="0.67"/>
+<circle cx="165.0" cy="28.5" r="0.9" fill="#dcd6ff" opacity="0.72" class="tw" style="animation-duration:6.2s;animation-delay:-3.7s"/>
+<circle cx="603.3" cy="31.3" r="1.0" fill="#dcd6ff" opacity="0.41" class="tw" style="animation-duration:3.3s;animation-delay:-1.9s"/>
+<circle cx="300.4" cy="20.6" r="0.8" fill="#dcd6ff" opacity="0.65"/>
+<circle cx="410.0" cy="12.3" r="0.7" fill="#dcd6ff" opacity="0.41"/>
+<circle cx="633.1" cy="59.3" r="0.7" fill="#dcd6ff" opacity="0.53" class="tw" style="animation-duration:6.0s;animation-delay:-0.7s"/>
+<circle cx="346.6" cy="26.0" r="0.6" fill="#dcd6ff" opacity="0.38"/>
+<circle cx="28.7" cy="57.3" r="1.3" fill="#dcd6ff" opacity="0.36" class="tw" style="animation-duration:6.0s;animation-delay:-0.4s"/>
+<circle cx="843.1" cy="25.7" r="0.6" fill="#dcd6ff" opacity="0.54"/>
+<circle cx="341.3" cy="11.2" r="0.6" fill="#dcd6ff" opacity="0.50"/>
+<circle cx="675.4" cy="26.7" r="0.8" fill="#dcd6ff" opacity="0.47" class="tw" style="animation-duration:5.2s;animation-delay:-1.2s"/>
+<circle cx="231.7" cy="24.1" r="0.6" fill="#dcd6ff" opacity="0.59" class="tw" style="animation-duration:6.6s;animation-delay:-5.7s"/>
+<circle cx="799.3" cy="45.6" r="0.9" fill="#dcd6ff" opacity="0.39"/>
+<circle cx="801.5" cy="51.0" r="1.0" fill="#dcd6ff" opacity="0.51"/>
+<circle cx="690.2" cy="34.2" r="1.0" fill="#dcd6ff" opacity="0.38" class="tw" style="animation-duration:3.3s;animation-delay:-1.0s"/>
+<circle cx="861.0" cy="49.4" r="0.9" fill="#dcd6ff" opacity="0.49"/>
+<circle cx="77.5" cy="34.6" r="1.0" fill="#dcd6ff" opacity="0.41"/>
+<circle cx="854.5" cy="56.3" r="1.3" fill="#dcd6ff" opacity="0.50" class="tw" style="animation-duration:3.3s;animation-delay:-6.7s"/>
+<circle cx="670.3" cy="22.7" r="1.3" fill="#dcd6ff" opacity="0.37"/>
+<circle cx="667.3" cy="72.9" r="0.9" fill="#dcd6ff" opacity="0.73"/>
+<circle cx="617.1" cy="32.8" r="1.0" fill="#dcd6ff" opacity="0.45"/>
+<circle cx="242.6" cy="77.3" r="0.7" fill="#dcd6ff" opacity="0.83"/>
+<circle cx="603.3" cy="38.2" r="0.8" fill="#dcd6ff" opacity="0.72"/>
+<circle cx="719.4" cy="15.1" r="0.8" fill="#dcd6ff" opacity="0.44" class="tw" style="animation-duration:6.6s;animation-delay:-4.7s"/>
+<circle cx="676.2" cy="65.0" r="1.0" fill="#dcd6ff" opacity="0.50" class="tw" style="animation-duration:4.0s;animation-delay:-1.8s"/>
+<circle cx="761.4" cy="29.9" r="0.6" fill="#dcd6ff" opacity="0.69"/>
+<circle cx="253.3" cy="53.4" r="0.6" fill="#dcd6ff" opacity="0.82" class="tw" style="animation-duration:6.4s;animation-delay:-1.7s"/>
+<circle cx="876.6" cy="40.7" r="0.6" fill="#dcd6ff" opacity="0.57" class="tw" style="animation-duration:4.0s;animation-delay:-4.0s"/>
+<circle cx="167.4" cy="30.4" r="1.0" fill="#dcd6ff" opacity="0.72" class="tw" style="animation-duration:3.5s;animation-delay:-6.4s"/>
+<circle cx="586.8" cy="10.2" r="0.6" fill="#dcd6ff" opacity="0.85" class="tw" style="animation-duration:3.3s;animation-delay:-4.3s"/>
+<circle cx="131.0" cy="49.7" r="0.9" fill="#dcd6ff" opacity="0.84" class="tw" style="animation-duration:6.2s;animation-delay:-0.3s"/>
+<circle cx="46.1" cy="52.4" r="0.6" fill="#dcd6ff" opacity="0.53" class="tw" style="animation-duration:3.6s;animation-delay:-6.0s"/>
+<circle cx="190.2" cy="24.4" r="0.8" fill="#dcd6ff" opacity="0.77" class="tw" style="animation-duration:5.4s;animation-delay:-6.6s"/>
+<circle cx="202.0" cy="34.5" r="1.3" fill="#dcd6ff" opacity="0.52"/>
+<circle cx="875.6" cy="76.0" r="0.7" fill="#dcd6ff" opacity="0.55"/>
+<circle cx="282.4" cy="69.2" r="0.9" fill="#dcd6ff" opacity="0.57"/>
+<circle cx="678.3" cy="32.5" r="0.7" fill="#dcd6ff" opacity="0.52"/>
+<circle cx="44.0" cy="50.1" r="0.9" fill="#dcd6ff" opacity="0.80"/>
+<circle cx="374.3" cy="13.6" r="0.8" fill="#dcd6ff" opacity="0.37" class="tw" style="animation-duration:6.3s;animation-delay:-2.8s"/>
+<circle cx="22.4" cy="66.7" r="1.3" fill="#dcd6ff" opacity="0.59"/>
+<circle cx="820.2" cy="75.9" r="1.3" fill="#dcd6ff" opacity="0.78"/>
+<text x="450.0" y="47" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="13" letter-spacing=".6" fill="#aeadc4">drobov1tya.github.io<tspan fill="#b4a0f8">/persona</tspan></text>
+</g>
+<rect x=".5" y=".5" width="899" height="83" rx="13.5" fill="none" stroke="rgba(239,237,247,.09)"/>
+</svg>
